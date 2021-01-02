@@ -1,0 +1,238 @@
+/*Variables SASS I*/
+
+$color-titulo: #E9E9E9;
+$color-subtitulo: #383838;
+$bg-titulo-oscuro: #383838;
+
+h1 {
+	color: $color-titulo;
+	text-align: center;
+	font-size: 37px;
+	font-family: Bebas Neue;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+h2 {
+	color: $color-subtitulo;
+	font-size: 30px;
+	letter-spacing: 2px;
+	font-family: Bebas Neue;
+	text-align: center;
+}
+
+h3 {
+	color: $color-subtitulo;
+	font-size: 25px;
+	text-align: center;
+	letter-spacing: 2px;
+	font-family: Bebas Neue;
+	
+}
+
+h5 {
+	@extend h3;
+	font-size: 15px;
+	letter-spacing: 1px;
+	font-family: roboto;
+}
+
+p {
+	font-family: 'Roboto', sans-serif;
+}
+
+ul {
+	color: #004463;
+	list-style: none;
+	  li {
+	  	display: inline;
+	  	 a {
+	  	 	text-decoration: none;
+	  	 }
+	  }
+} 
+
+a {
+	text-decoration: none;
+}
+
+footer {
+	background: rgb(60,71,98);
+background: linear-gradient(180deg, rgba(60,71,98,1) 0%, rgba(129,157,222,0) 0%, rgba(5,11,25,1) 58%);
+}
+
+/*FIN de personalizacion basica de etiquetas*/
+
+/*INICIO Mensaje Superior y Redes Sociales*/
+
+.containerTop {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	align-content: center;
+	height: 30px;
+	background-color: #050B19;
+	color: white;
+	font-family:'Montserrat', sans-serif;
+	margin: 4px 0px;
+	padding: 0px 0px;
+
+	     .floatLeft {
+	     	overflow: hidden;
+	     	text-align: left;
+	     	width: 70%;
+	     	font-size: 13px;
+	     	margin: 10px 10px;
+	     	padding: 0px 10px;
+
+	     }
+	     .floatRight {
+	     	text-align: right;
+	     	width: 30%;
+	     	height: 30px;
+	     	margin: 0px 10px;
+	     	padding: 0px 10px;
+	     	  .icon {
+	     	  	height: 20px;
+	     	  	word-spacing: 1px;
+	     	  }
+	     }
+}
+
+/* FIN Mensaje Superior y Redes Sociales*/
+
+
+/*INICIO Inicio*/
+
+.best {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	align-items: center;
+	align-content: center;
+	width: 100%;
+}
+
+.best__tittle {
+	margin: 40px 0px 0px 0px;
+}
+
+.best__product {
+	display: inline;
+	width: 210px;
+	height: 210px;
+	margin: 50px;
+	transition: all 0.4s;
+}
+
+.best__product:hover {
+	width: 198px;
+	height: 198px;
+	opacity: 0.7;
+}
+
+
+.best__video {
+	width: 720px;
+	height: 405px;
+}
+
+/*FIN Inicio*/
+
+
+/*INICIO CSS valores básicos*/
+
+.tittle-pag {
+	color: $bg-titulo-oscuro;
+}
+
+.centrar {
+	text-align: center;
+}
+
+.aLaIzquierda {
+	text-align: left;
+}
+
+.aLaDerecha {
+	text-align: right;
+}
+
+.justificado {
+	text-align: justify;
+}
+
+.espacioPalabra {
+	word-spacing: 10px
+}
+
+.espaciado {
+	letter-spacing: 5px
+}
+
+.mayusculas {
+	text-transform: uppercase;
+}
+
+/*FIN CSS valores básicos*/
+
+/*INICIO Quienes Somos y Envios*/
+
+.descripcion {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	align-items: center;
+	margin: 5px 10px;
+	padding: 5px 0px 15px 0px;
+}
+
+.subH2 {
+	margin: 1px 425px;
+	font-size: 15px;
+	color: #2C3E50;
+	text-align: center;
+	letter-spacing: 2px;
+}
+
+.descripcion-item {
+	margin: 15px 130px;
+	text-align: justify;
+
+}
+
+.caracteristicas {
+	margin: 25px 120px;
+	text-align: center;
+	word-spacing: 50px;
+}
+
+.item-caracteristicas {
+	color: black;
+	font-size: 15px;
+	word-spacing: 0px;
+}
+
+/*FIN Quienes Somos*/
+
+
+/*INICIO Footer*/
+
+.copyright {
+	color: white;
+	text-align: center;
+	margin: 7px;
+	font-size: 15px;
+        .icon-footer {
+        	margin: 10px 0px 0px;
+        	width: 40px;
+        	height: 40px;
+        	word-spacing: 1px;
+        }
+}
+
+/*FIN Footer*/
+
+
+
+
