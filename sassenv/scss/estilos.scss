@@ -1,6 +1,6 @@
 /*Variables SASS I*/
 
-$color-titulo: #E9E9E9;
+$color-titulo: #000000;
 $color-subtitulo: #383838;
 $bg-titulo-oscuro: #383838;
 
@@ -48,6 +48,7 @@ ul {
 	  	display: inline;
 	  	 a {
 	  	 	text-decoration: none;
+	  	 	list-style: none;
 	  	 }
 	  }
 } 
@@ -114,7 +115,7 @@ background: linear-gradient(180deg, rgba(60,71,98,1) 0%, rgba(129,157,222,0) 0%,
 }
 
 .best__tittle {
-	margin: 40px 0px 0px 0px;
+	margin: 40px 0px 40px 0px;
 }
 
 .best__product {
@@ -139,6 +140,80 @@ background: linear-gradient(180deg, rgba(60,71,98,1) 0%, rgba(129,157,222,0) 0%,
 
 /*FIN Inicio*/
 
+.container {
+  max-width: 960px;
+}
+
+/*
+ * Custom translucent site header
+ */
+
+.site-header {
+  background-color: rgba(0, 0, 0, .85);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  backdrop-filter: saturate(180%) blur(20px);
+}
+.site-header a {
+  color: #999;
+  transition: ease-in-out color .15s;
+}
+.site-header a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+/*
+ * Dummy devices (replace them with your own or something else entirely!)
+ */
+
+.product-device {
+  position: absolute;
+  right: 10%;
+  bottom: -30%;
+  width: 300px;
+  height: 540px;
+  background-color: #333;
+  border-radius: 21px;
+  -webkit-transform: rotate(30deg);
+  transform: rotate(30deg);
+}
+
+.product-device::before {
+  position: absolute;
+  top: 10%;
+  right: 10px;
+  bottom: 10%;
+  left: 10px;
+  content: "";
+  background-color: rgba(255, 255, 255, .1);
+  border-radius: 5px;
+}
+
+.product-device-2 {
+  top: -25%;
+  right: auto;
+  bottom: 0;
+  left: 5%;
+  background-color: #e5e5e5;
+}
+
+
+/*
+ * Extra utilities
+ */
+
+.flex-equal > * {
+  -ms-flex: 1;
+  flex: 1;
+}
+@media (min-width: 768px) {
+  .flex-md-equal > * {
+    -ms-flex: 1;
+    flex: 1;
+  }
+}
+
+.overflow-hidden { overflow: hidden; }
 
 /*INICIO CSS valores básicos*/
 
@@ -202,14 +277,16 @@ background: linear-gradient(180deg, rgba(60,71,98,1) 0%, rgba(129,157,222,0) 0%,
 }
 
 .caracteristicas {
-	margin: 25px 120px;
 	text-align: center;
+	align-items: center;
 	word-spacing: 50px;
 }
 
 .item-caracteristicas {
 	color: black;
 	font-size: 15px;
+	text-align: center;
+	text-align: center;
 	word-spacing: 0px;
 }
 
